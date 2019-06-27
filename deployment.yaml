@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: netcorehello
+  labels:
+    app: netcorehello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: netcorehello
+  template:
+    metadata:
+      labels:
+        app: netcorehello
+    spec:
+      containers:
+      - name: netcorehello
+        image: localhost:5000/netcorehello:latest
+        resources:
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
