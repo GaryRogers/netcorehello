@@ -1,6 +1,6 @@
 # .Net Core Hello World in a Kubernetes Container
 
-Just a simple little jva console app to heartbeat to the console. Used for testing Kubernetes, and Application Performance Monitoring of Kubernetes. If you need to have a continer running to troubleshoot monitoring this will fill the bill while consuming relatively small amounts of resources.
+Just a simple little .Net Core console app to heartbeat to the console. Used for testing Kubernetes and Application Performance Monitoring of Kubernetes. If you need to have a continer running to troubleshoot monitoring this will fill the bill while consuming relatively small amounts of resources.
 
 # Building
 
@@ -49,7 +49,7 @@ kubectl get pods
 ## Watch the logs from the container
 
 ```powershell
-kubectl logs pod/netcorehello-967b669b-nbzvk --namespace=default --container=netcorehello -f
+kubectl logs pod/netcorehello-fd5cc4d5b-c6l9w --namespace=default --container=netcorehello -f
 ```
 
 ## Remove the deployment
